@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo da Comunicação — Boas e Más Práticas na Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Prática de Acessibilidade 1: Link para pular direto ao conteúdo -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header class="cabecalho">
+        <div class="container">
+            <h1>Semáforo da Comunicação</h1>
+            <p class="subtitulo">Guia visual de boas e más práticas de comunicação em interfaces web.</p>
+
+            <!-- Prática de Acessibilidade 2: Navegação semântica e previsível -->
+            <nav aria-label="Menu de categorias do semáforo">
+                <ul class="menu">
+                    <li><a href="#secao-verde"><span aria-hidden="true">🟢</span> Verde – Boas práticas</a></li>
+                    <li><a href="#secao-amarelo"><span aria-hidden="true">🟡</span> Amarelo – Cuidado</a></li>
+                    <li><a href="#secao-vermelho"><span aria-hidden="true">🔴</span> Vermelho – Evitar</a></li>
+                    <li><a href="#acessibilidade"><span aria-hidden="true">♿</span> Acessibilidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="container">
+
+        <!-- CATEGORIA 1: VERDE (5 CARDS) -->
+        <section id="secao-verde" class="secao bloco-verde" aria-labelledby="titulo-verde">
+            <div class="secao-topo">
+                <h2 id="titulo-verde"><span aria-hidden="true">🟢</span> VERDE – Boas práticas</h2>
+                <p>Atitudes recomendadas que tornam a interface clara, acolhedora e fácil de entender.</p>
+            </div>
+
+            <div class="grid-cards">
+                <article class="card card-verde">
+                    <span class="badge-card">🟢 Recomendado • #01</span>
+                    <h3>Linguagem Direta</h3>
+                    <p>Escreva frases curtas e objetivas, indo direto ao ponto sem rodeios desnecessários.</p>
+                </article>
+
+                <article class="card card-verde">
+                    <span class="badge-card">🟢 Recomendado • #02</span>
+                    <h3>Botões Autoexplicativos</h3>
+                    <p>Use verbos claros nos botões, como "Salvar alterações" ou "Enviar formulário", em vez de apenas "OK".</p>
+                </article>
+
+                <article class="card card-verde">
+                    <span class="badge-card">🟢 Recomendado • #03</span>
+                    <h3>Mensagens de Erro Úteis</h3>
+                    <p>Explique o que aconteceu e como resolver, por exemplo: "Digite um e-mail válido no formato nome@dominio.com".</p>
+                </article>
+
+                <article class="card card-verde">
+                    <span class="badge-card">🟢 Recomendado • #04</span>
+                    <h3>Ícones com Texto</h3>
+                    <p>Acompanhe ícones e símbolos com rótulos escritos para evitar dúvidas sobre o significado de cada ação.</p>
+                </article>
+
+                <article class="card card-verde">
+                    <span class="badge-card">🟢 Recomendado • #05</span>
+                    <h3>Hierarquia Visual Clara</h3>
+                    <p>Organize conteúdos com títulos, subtítulos e listas bem espaçadas para facilitar a leitura rápida.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CATEGORIA 2: AMARELO (5 CARDS) -->
+        <section id="secao-amarelo" class="secao bloco-amarelo" aria-labelledby="titulo-amarelo">
+            <div class="secao-topo">
+                <h2 id="titulo-amarelo"><span aria-hidden="true">🟡</span> AMARELO – Cuidado</h2>
+                <p>Elementos que exigem atenção e moderação para não confundir ou sobrecarregar o usuário.</p>
+            </div>
+
+            <div class="grid-cards">
+                <article class="card card-amarelo">
+                    <span class="badge-card">🟡 Atenção • #06</span>
+                    <h3>Siglas e Termos Técnicos</h3>
+                    <p>Evite jargões sem explicação. Se precisar usar uma sigla, apresente seu significado na primeira menção.</p>
+                </article>
+
+                <article class="card card-amarelo">
+                    <span class="badge-card">🟡 Atenção • #07</span>
+                    <h3>Notificações Frequentes</h3>
+                    <p>Alertas em excesso interrompem a leitura. Exiba avisos apenas quando forem realmente relevantes.</p>
+                </article>
+
+                <article class="card card-amarelo">
+                    <span class="badge-card">🟡 Atenção • #08</span>
+                    <h3>Textos Longos em Bloco</h3>
+                    <p>Parágrafos muito extensos cansam a vista. Divida o conteúdo em trechos menores e tópicos objetivos.</p>
+                </article>
+
+                <article class="card card-amarelo">
+                    <span class="badge-card">🟡 Atenção • #09</span>
+                    <h3>Formulários Extensos</h3>
+                    <p>Solicite apenas os dados essenciais e indique claramente quais campos são obrigatórios.</p>
+                </article>
+
+                <article class="card card-amarelo">
+                    <span class="badge-card">🟡 Atenção • #10</span>
+                    <h3>Tempo Limite de Ação</h3>
+                    <p>Evite mensagens ou sessões que desaparecem rápido demais antes que o usuário consiga ler.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CATEGORIA 3: VERMELHO (5 CARDS) -->
+        <section id="secao-vermelho" class="secao bloco-vermelho" aria-labelledby="titulo-vermelho">
+            <div class="secao-topo">
+                <h2 id="titulo-vermelho"><span aria-hidden="true">🔴</span> VERMELHO – Evitar</h2>
+                <p>Práticas prejudiciais que criam barreiras de compreensão e frustram a experiência na web.</p>
+            </div>
+
+            <div class="grid-cards">
+                <article class="card card-vermelho">
+                    <span class="badge-card">🔴 Evitar • #11</span>
+                    <h3>Informação Apenas por Cor</h3>
+                    <p>Nunca diferencie estados (como erro ou sucesso) usando somente cores; inclua sempre ícones e texto.</p>
+                </article>
+
+                <article class="card card-vermelho">
+                    <span class="badge-card">🔴 Evitar • #12</span>
+                    <h3>Baixo Contraste</h3>
+                    <p>Textos claros sobre fundos claros dificultam a leitura e tornam o conteúdo ilegível para muitas pessoas.</p>
+                </article>
+
+                <article class="card card-vermelho">
+                    <span class="badge-card">🔴 Evitar • #13</span>
+                    <h3>Janelas Pop-up Invasivas</h3>
+                    <p>Janelas que abrem sozinhas bloqueando a tela atrapalham a navegação e desorientam leitores de tela.</p>
+                </article>
+
+                <article class="card card-vermelho">
+                    <span class="badge-card">🔴 Evitar • #14</span>
+                    <h3>Links Genéricos</h3>
+                    <p>Evite textos como "Clique aqui" ou "Saiba mais" isolados, pois não informam para onde o link leva.</p>
+                </article>
+
+                <article class="card card-vermelho">
+                    <span class="badge-card">🔴 Evitar • #15</span>
+                    <h3>Animações Piscantes</h3>
+                    <p>Elementos que piscam ou se movem sem parar causam distração, desconforto visual e sobrecarga sensorial.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- RESUMO DAS PRÁTICAS DE ACESSIBILIDADE -->
+        <section id="acessibilidade" class="secao bloco-acessibilidade" aria-labelledby="titulo-acessibilidade">
+            <h2 id="titulo-acessibilidade"><span aria-hidden="true">♿</span> Práticas de Acessibilidade Aplicadas</h2>
+            <ul class="lista-acessibilidade">
+                <li><strong>1. HTML5 Semântico:</strong> Uso estruturado de <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code>.</li>
+                <li><strong>2. Identificação Redundante:</strong> Nenhuma categoria depende apenas de cor; todas combinam símbolo, rótulo textual e borda diferenciada.</li>
+                <li><strong>3. Alto Contraste:</strong> Paleta planejada para garantir leitura nítida entre texto e plano de fundo.</li>
+                <li><strong>4. Navegação por Teclado e Foco Visível:</strong> Link de salto para o conteúdo e contorno destacado (<code>:focus-visible</code>).</li>
+                <li><strong>5. Atributos ARIA:</strong> Uso de <code>aria-label</code>, <code>aria-labelledby</code> e <code>aria-hidden="true"</code> em ícones decorativos.</li>
+                <li><strong>6. Tipografia Legível e Responsividade:</strong> Fonte sem serifa com espaçamento confortável e adaptação fluida para celulares.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>Semáforo da Comunicação</strong> — Boas e Más Práticas em Interfaces Web</p>
+            <p>Desenvolvido com HTML5 e CSS3 • 15 Cards Educativos • Projeto Acessível</p>
+        </div>
+    </footer>
+</body>
+</html>
